@@ -1,0 +1,64 @@
+<?php
+class CuratescapeGalleries_View_Helper_GalleriesFilesForItem extends Zend_View_Helper_Abstract{
+	public function GalleriesFilesForItem($html, $args){
+		if(
+			!isset($args) || 
+			!isset($args['item']) || 
+			!is_array($args['item']['Files'])
+		){
+			return $html;
+		}else{
+			$html = null;
+		}
+		return $this->filesDisplayGallery($this->filesByType($args['item']['Files']), option('curatescapegalleries_gallery_style'));
+	}
+	public function filesDisplayGallery($files, $galleryType = 'gallery-inline-captions', $html = null)
+	{
+		if(!$files) return null;
+		if($galleryType == 'gallery-table'){
+			$html .= filesOutputTable(array_merge($files['images'], $files['audio'], $files['video'], $files['other']), false);
+		}elseif($galleryType == 'gallery-slides'){
+			if($compat = array_merge($files['images'], $files['audio'], $files['video'])){
+				$html .= lightgallery($compat);
+			}
+			$html .= filesOutputTable($files['other']);
+		}else{
+			// grid or inline
+			if(option('curatescapegalleries_lightbox_docs')==1 || $galleryType == 'gallery-inline-captions'){
+				$html .= filesOutputFigures($files['images'], $files['audio'], $files['video'], $files['other'], $galleryType);
+			}else{
+				$html .= filesOutputFigures($files['images'], $files['audio'], $files['video'], array(),$galleryType);
+				$html .= filesOutputTable($files['other'], false);
+			}
+		}
+		return '<div class="curatescape-files">'.$html.'</div>';
+	}
+	private function filesByType($files)
+	{
+		$byType = array(
+			'images' => array(),
+			'audio' => array(),
+			'video' => array(),
+			'other' => array(),
+		);
+		if(!$files) return $byType;
+		foreach($files as $file){
+			$type = $file->mime_type;
+			switch($type){
+				case stripos($type,'image') !== false:
+					$byType['images'][] = $file;
+					break;
+				case stripos($type,'audio') !== false:
+					$byType['audio'][] = $file;
+					break;
+				case stripos($type,'video') !== false:
+					$byType['video'][] = $file;
+					break;
+				default:
+					$byType['other'][] = $file;
+					break;
+			}
+		}
+		return $byType;
+	}
+}

@@ -1,0 +1,236 @@
+/* vars! */
+:root {
+  --pswp-caption-text: #fff;
+  --calculated-accent-color: #f2f2f2;
+  /* overridden in photoswipe.js (getCalculatedLinkColor) */
+}
+
+/* photoswipe! */
+.pswp__bg {
+  background: linear-gradient(to top, rgb(0, 0, 0) 65%, rgba(0, 0, 0, 0.85));
+}
+
+.pswp__pswp-caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.pswp__pswp-caption > div {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--pswp-caption-text);
+  padding: 1lh;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75));
+}
+
+.pswp__pswp-caption cite::before {
+  content: none;
+}
+
+.pswp__pswp-caption cite {
+  font-size: inherit;
+  color: inherit;
+  display: inline;
+}
+
+.pswp__pswp-caption a:link:not(.button),
+.pswp__pswp-caption a:visited:not(.button) {
+  color: var(--calculated-accent-color);
+}
+
+.pswp__pswp-caption a.button {
+  text-shadow: initial;
+}
+
+.pswp button {
+  background-color: unset !important;
+}
+
+.pswp__audio-container,
+.pswp__video-container,
+.pswp__document-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pswp__audio-container audio,
+.pswp__video-container video {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10vh rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 1);
+  max-width: calc(100% - 150px);
+  margin: 0 auto;
+}
+
+.pswp__document-container a.curatescape-pswp-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.pswp__document-container .document-thumb {
+  display: inline-block;
+}
+
+.pswp__audio-container audio.firefox,
+.pswp__video-container video {
+  border: 1px solid rgba(256, 256, 256, 0.15);
+}
+
+.pswp__document-container .document-thumb img,
+.pswp__document-container .document-thumb a {
+  width: calc(100% - 10px);
+  max-width: 400px;
+  height: auto;
+}
+
+.pswp__document-container .document-thumb,
+.pswp__document-container iframe,
+.pswp__document-container object {
+  max-width: calc(100% - 150px);
+  max-height: calc(100vh - 150px);
+  margin: 0 auto;
+}
+
+@media all and (max-width: 500px) {
+  .pswp__document-container .document-thumb,
+  .pswp__audio-container audio,
+  .pswp__video-container video,
+  .pswp__document-container object,
+  .pswp__document-container iframe {
+    max-width: calc(100% - 10px);
+    max-height: 90vh;
+  }
+}
+
+/* files */
+.curatescape-files {
+  display: block;
+  width: 100%;
+  container-name: gallerycontainer;
+  /* <== Container */
+  container-type: inline-size;
+  /* <== Container */
+  padding-bottom: 0.5em;
+}
+
+.curatescape-files cite::before {
+  content: none;
+}
+
+.curatescape-files cite {
+  font-size: inherit;
+  color: inherit;
+  display: inline;
+}
+
+.curatescape-files figure {
+  margin: 0 auto;
+}
+
+.curatescape-files figcaption cite,
+.curatescape-files table cite {
+  font-weight: 600;
+}
+
+/* file figures */
+.curatescape-file-figure img,
+.curatescape-file-figure audio,
+.curatescape-file-figure video,
+.curatescape-file-figure object,
+.curatescape-file-figure iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.curatescape-file-figure audio {
+  width: calc(100% - 1lh);
+  padding: 0.5lh 0;
+}
+
+.curatescape-file-figure video,
+.curatescape-file-figure object,
+.curatescape-file-figure iframe {
+  width: 100%;
+}
+
+.curatescape-file-figure object,
+.curatescape-file-figure iframe {
+  min-height: 70vh;
+}
+
+/* files table */
+.filestablecontainer {
+  container-name: filestablecontainer;
+  /* <== Container */
+  container-type: inline-size;
+  /* <== Container */
+}
+
+table.curatescape-additional-files a.button {
+  text-decoration: none;
+  margin: 0.25lh 0;
+}
+
+table.curatescape-additional-files caption {
+  text-align: start;
+  font-style: normal;
+}
+
+table.curatescape-additional-files caption h3 {
+  margin: 0;
+}
+
+table.curatescape-additional-files th,
+table.curatescape-additional-files td {
+  padding-left: 0;
+  text-align: left;
+}
+
+table.curatescape-additional-files td:first-child {
+  padding-right: 1lh;
+}
+
+table.curatescape-additional-files td:last-child {
+  white-space: nowrap;
+  height: 100%;
+}
+
+table.curatescape-additional-files td:last-child span.file-download {
+  display: inline-table;
+  margin: 0.5lh 0 0;
+}
+
+table.curatescape-additional-files td span.type {
+  text-transform: uppercase;
+  display: block;
+  margin: 0.25lh 0 0 0;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+@container filestablecontainer (width < 600px) {
+  table.curatescape-additional-files thead {
+    visibility: collapse;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  table.curatescape-additional-files tbody tr {
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+  }
+
+  table.curatescape-additional-files tbody tr + tr {
+    margin-top: 1lh;
+  }
+}

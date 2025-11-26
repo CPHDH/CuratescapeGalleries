@@ -1,0 +1,52 @@
+.curatescapegallery-fix-bigstuff table.curatescape-additional-files,
+.curatescapegallery-fix-berlin table.curatescape-additional-files,
+.curatescapegallery-fix-rhythm table.curatescape-additional-files {
+  display: table;
+  padding: 0 10px 0 0;
+}
+.curatescapegallery-fix-foundation table.curatescape-additional-files th,
+.curatescapegallery-fix-foundation table.curatescape-additional-files td {
+  padding-left: 0.625rem;
+}
+.curatescapegallery-fix-santa-fe table.curatescape-additional-files th,
+.curatescapegallery-fix-santa-fe table.curatescape-additional-files td {
+  padding-left: 9px;
+}
+.curatescapegallery-fix-default table.curatescape-additional-files th,
+.curatescapegallery-fix-default table.curatescape-additional-files td {
+  padding-left: 4px;
+}
+.curatescapegallery-fix-rhythm #omeka-lightgallery img {
+  float: none !important;
+  height: 100% !important;
+}
+.curatescapegallery-fix-rhythm .curatescape-files {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.curatescapegallery-fix-emiglio
+  .curatescape-image-gallery.gallery-grid
+  .curatescape-image-figure
+  img {
+  margin: unset;
+  padding: unset;
+  border: unset;
+  background-color: unset;
+}
+.curatescapegallery-fix-bigstuff .curatescape-image-gallery.gallery-grid,
+.curatescapegallery-fix-berlin .curatescape-image-gallery.gallery-grid {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 800px) {
+  .curatescapegallery-fix-big-picture.type-curatescape-story.items.show.gallery
+    .item-metadata {
+    width: 35% !important;
+  }
+  .curatescapegallery-fix-big-picture.type-curatescape-story.items.show
+    div#itemfiles,
+  .curatescapegallery-fix-big-picture.type-curatescape-story.items.show
+    div.lightgallery {
+    width: 65% !important;
+  }
+}
