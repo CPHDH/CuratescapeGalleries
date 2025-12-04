@@ -1,0 +1,105 @@
+# Translation for Curatescape Galleries plugin for Omeka Classic
+# Copyright (C) 2025 Center for Public History + Digital Humanities at Cleveland State University
+# This file is distributed under the same license as the PACKAGE package.
+# Center for Public History + Digital Humanities at Cleveland State University <digitalhumanities@csuohio.edu>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-03 17:19-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:33 functions.php:56 functions.php:83 functions.php:143
+#: functions.php:150 functions.php:33 functions.php:56 functions.php:83
+#: functions.php:143 functions.php:150
+msgid "Download"
+msgstr ""
+
+#: functions.php:94 functions.php:94 views/helpers/GalleriesFileMarkup.php:21
+msgid "Image"
+msgstr ""
+
+#: functions.php:106 functions.php:106 views/helpers/GalleriesFileMarkup.php:31
+msgid "Audio"
+msgstr ""
+
+#: functions.php:118 functions.php:118 views/helpers/GalleriesFileMarkup.php:36
+msgid "Document"
+msgstr ""
+
+#: functions.php:130 functions.php:130 views/helpers/GalleriesFileMarkup.php:26
+msgid "Video"
+msgstr ""
+
+#: functions.php:142 functions.php:142
+msgid "Documents"
+msgstr ""
+
+#: functions.php:143 functions.php:143
+msgid "File Details"
+msgstr ""
+
+#: functions.php:175 functions.php:175
+#, php-format
+msgid "File #%s: [Untitled]"
+msgstr ""
+
+#: functions.php:176 functions.php:176
+msgid "View File Record"
+msgstr ""
+
+#: functions.php:181 functions.php:181
+msgid "Source"
+msgstr ""
+
+#: functions.php:184 functions.php:184
+msgid "Date"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:5
+#, php-format
+msgid ""
+"To learn about Curatescape mobile apps for iOS and Android, visit %1s. For "
+"support, create an account at %2s."
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:7
+msgid "File Display Settings"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:8
+msgid ""
+"Use the following options to customize the display of files on Item and File "
+"records."
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:12
+msgid "Thumbnail Grid (default)"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:13
+msgid "Inline Captions"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:14
+msgid "Slides"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:15
+msgid "Files Table"
+msgstr ""
+
+#: views/helpers/GalleriesConfigForm.php:25
+msgid ""
+"If checked, use theme-specific CSS styles provided by the Curatescape "
+"Galleries plugin. These styles apply to select themes and only affect "
+"gallery-related content."
+msgstr ""

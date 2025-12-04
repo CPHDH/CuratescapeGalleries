@@ -1,0 +1,111 @@
+# Spanish translation for Curatescape Galleries plugin for Omeka Classic
+# Copyright (C) 2025 Center for Public History + Digital Humanities at Cleveland State University
+# This file is distributed under the same license as the PACKAGE package.
+# Center for Public History + Digital Humanities at Cleveland State University <digitalhumanities@csuohio.edu>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Curatescape Galleries\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-03 17:19-0500\n"
+"PO-Revision-Date: 2025-12-04 10:45-0500\n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:33 functions.php:56 functions.php:83 functions.php:143
+#: functions.php:150 functions.php:33 functions.php:56 functions.php:83
+#: functions.php:143 functions.php:150
+msgid "Download"
+msgstr "Descargar"
+
+#: functions.php:94 functions.php:94 views/helpers/GalleriesFileMarkup.php:21
+msgid "Image"
+msgstr "Imagen"
+
+#: functions.php:106 functions.php:106 views/helpers/GalleriesFileMarkup.php:31
+msgid "Audio"
+msgstr "Audio"
+
+#: functions.php:118 functions.php:118 views/helpers/GalleriesFileMarkup.php:36
+msgid "Document"
+msgstr "Documento"
+
+#: functions.php:130 functions.php:130 views/helpers/GalleriesFileMarkup.php:26
+msgid "Video"
+msgstr "Vídeo"
+
+#: functions.php:142 functions.php:142
+msgid "Documents"
+msgstr "Documentos"
+
+#: functions.php:143 functions.php:143
+msgid "File Details"
+msgstr "Detalles del archivo"
+
+#: functions.php:175 functions.php:175
+#, php-format
+msgid "File #%s: [Untitled]"
+msgstr "Archivo #%s: [Sin título]"
+
+#: functions.php:176 functions.php:176
+msgid "View File Record"
+msgstr "Ver registro del archivo"
+
+#: functions.php:181 functions.php:181
+msgid "Source"
+msgstr "Fuente"
+
+#: functions.php:184 functions.php:184
+msgid "Date"
+msgstr "Fecha"
+
+#: views/helpers/GalleriesConfigForm.php:5
+#, php-format
+msgid ""
+"To learn about Curatescape mobile apps for iOS and Android, visit %1s. For "
+"support, create an account at %2s."
+msgstr ""
+"Para obtener más información sobre las aplicaciones móviles de Curatescape para "
+"iOS y Android, visite %1s. Para obtener soporte, cree una cuenta en %2s."
+
+#: views/helpers/GalleriesConfigForm.php:7
+msgid "File Display Settings"
+msgstr "Configuración de visualización de archivos"
+
+#: views/helpers/GalleriesConfigForm.php:8
+msgid ""
+"Use the following options to customize the display of files on Item and File "
+"records."
+msgstr ""
+"Use las siguientes opciones para personalizar la visualización de archivos en "
+"los registros de objetos y archivos."
+
+#: views/helpers/GalleriesConfigForm.php:12
+msgid "Thumbnail Grid (default)"
+msgstr "Cuadrícula de miniaturas (predeterminado)"
+
+#: views/helpers/GalleriesConfigForm.php:13
+msgid "Inline Captions"
+msgstr "Subtítulos en línea"
+
+#: views/helpers/GalleriesConfigForm.php:14
+msgid "Slides"
+msgstr "Diapositivas"
+
+#: views/helpers/GalleriesConfigForm.php:15
+msgid "Files Table"
+msgstr "Tabla de archivos"
+
+#: views/helpers/GalleriesConfigForm.php:25
+msgid ""
+"If checked, use theme-specific CSS styles provided by the Curatescape "
+"Galleries plugin. These styles apply to select themes and only affect "
+"gallery-related content."
+msgstr ""
+"Si está marcado, utiliza los estilos CSS específicos del tema proporcionados por "
+"el complemento Curatescape Galleries. Estos estilos se aplican a temas "
+"seleccionados y solo afectan el contenido relacionado con galerías."
