@@ -1,16 +1,16 @@
 # French translation for Curatescape Galleries plugin for Omeka Classic
 # Copyright (C) 2025 Center for Public History + Digital Humanities at Cleveland State University
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the plugin package.
 # Center for Public History + Digital Humanities at Cleveland State University <digitalhumanities@csuohio.edu>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Curatescape Galleries\n"
+"Project-Id-Version: Curatescape Galleries 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-03 17:19-0500\n"
 "PO-Revision-Date: 2025-12-04 10:40-0500\n"
-"Last-Translator: \n"
-"Language-Team: French\n"
+"Last-Translator: Center for Public History + Digital Humanities at Cleveland State University <digitalhumanities@csuohio.edu>\n"
+"Language-Team: Center for Public History + Digital Humanities at Cleveland State University <digitalhumanities@csuohio.edu>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
