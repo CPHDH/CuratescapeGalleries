@@ -28,7 +28,7 @@ class CuratescapeGalleriesPlugin extends Omeka_Plugin_AbstractPlugin{
 			is_current_url('/admin/plugins/config?name=CuratescapeGalleries') ||
 			is_current_url('/admin/plugins/config/name/CuratescapeGalleries')
 		){
-			queue_css_file('config', 'all', false, 'css', get_plugin_ini('CuratescapeGalleries', 'version'));
+			queue_css_file('galleries-config', 'all', false, 'css', get_plugin_ini('CuratescapeGalleries', 'version'));
 		}
 	}
 	public function hookInitialize()
