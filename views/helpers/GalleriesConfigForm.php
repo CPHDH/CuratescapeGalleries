@@ -24,7 +24,7 @@ class CuratescapeGalleries_View_Helper_GalleriesConfigForm extends Zend_View_Hel
 			<!-- Theme Fixes -->
 			<?php echo $this->configFormCheckBox('curatescapegalleries_theme_fixes', 'Theme Fixes', __('If checked, use theme-specific CSS styles provided by the Curatescape Galleries plugin. These styles apply to select themes and only affect gallery-related content.'));?>
 		</fieldset>
-		<?
+		<?php
 	}
 	private function configFormCheckBox($optionName, $labelName, $helperText){
 		if(!$optionName || !$labelName || !$helperText) return null;
