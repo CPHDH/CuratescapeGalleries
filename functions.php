@@ -29,9 +29,10 @@ function imageLinkMarkup($file, $size='fullsize', $linkClass='gallery-image', $i
 {
 	if(!$file) return null;
 	$dimensions = dimensions($file, $size);
+	$alt = metadata($file,'alt_text') ?: $file->getProperty('display_title');
 	$fileHref = !option('link_to_file_metadata') ? record_image_url($file, $size) : $file->getProperty('permalink');
 	$html .= '<a'.($itemprop ? ' itemprop='.$itemprop : null).' href="'.$fileHref.'" class="pswp-item '.$linkClass.' '.$dimensions['orientation'].' file-'.$file->id.'" data-pswp-width="'.$dimensions['width'].'" data-pswp-height="'.$dimensions['height'].'" data-pswp-src="'.record_image_url($file, $size).'" data-pswp-type="image" data-pswp-fallbackmessage="'.__('Download').'">';
-		$html .= '<img loading="lazy" class="'.$imgClass.'" src="'.record_image_url($file, 'fullsize').'" width="'.$dimensions['width'].'" height="'.$dimensions['height'].'" alt="'.htmlentities($file->getProperty('display_title')).'" />';
+		$html .= '<img loading="lazy" class="'.$imgClass.'" src="'.record_image_url($file, 'fullsize').'" width="'.$dimensions['width'].'" height="'.$dimensions['height'].'" alt="'.htmlentities($alt).'" />';
 	$html .= '</a>';
 	return $html;
 }

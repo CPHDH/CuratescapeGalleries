@@ -21,7 +21,7 @@ class CuratescapeGalleries_View_Helper_GalleriesFileMarkup extends Zend_View_Hel
 					$type = __('Image');
 					$schemaURI = 'https://schema.org/ImageObject';
 					$imgSrc = $file->mime_type === 'image/tiff' ? $file->getWebPath('fullsize') : $file->getWebPath('original');
-					$markup = '<a href="'.$file->getWebPath('original').'"><img src="'.$imgSrc.'"/></a>';
+					$markup = '<a href="'.$file->getWebPath('original').'"><img src="'.$imgSrc.'" alt="'.metadata($file,'alt_text').'"/></a>';
 					break;
 				case str_contains($classString,'video'):
 					$type = __('Video');
